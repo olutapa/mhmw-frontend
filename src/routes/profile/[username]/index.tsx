@@ -111,7 +111,7 @@ function ProfilePage() {
                         <div class={styles.profile__header}>
                             <div class={styles.profile__header__left}>
                                 <div class={styles.profile__image}>
-                                    <img src="http://localhost:8000/assets/frankie.png" alt="frankie" />
+                                    <img src="https://weks.dev:59017/assets/frankie.png" alt="frankie" />
                                 </div>
                                 <div class={styles.profile__text}>
                                     <div class={styles.profile__name}>
