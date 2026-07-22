@@ -22,26 +22,26 @@ function Header(props: HeaderProps) {
                 <div class={styles.header__logo}>
                     <h1>
                         <Show when={props.pageTitle !== "home"} fallback={
-                            <>
+                            <div class={styles.logo_link}>
                                 <span style={{ color: "var(--red)" }}>M</span>
                                 <span style={{ color: "var(--blue)" }}>H</span>
                                 MegaWiki
-                            </>
+                            </div>
                         }>
                             <A href="/" class={styles.logo_link}>
                                 <span style={{ color: "var(--red)" }}>M</span>
                                 <span style={{ color: "var(--blue)" }}>H</span>
                                 MegaWiki
                             </A>
-                            <button class={styles.logo_text} onClick={() => setMenuOpen(!menuOpen())}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                    <path class={styles.menuIcon}></path>
-                                </svg>
-                                <span style={{ color: "var(--red)" }}>M</span>
-                                <span style={{ color: "var(--blue)" }}>H</span>
-                                MegaWiki
-                            </button>
                         </Show>
+                        <button class={styles.logo_text} onClick={() => setMenuOpen(!menuOpen())}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path class={styles.menuIcon}></path>
+                            </svg>
+                            <span style={{ color: "var(--red)" }}>M</span>
+                            <span style={{ color: "var(--blue)" }}>H</span>
+                            MegaWiki
+                        </button>
                     </h1>
                 </div>
 

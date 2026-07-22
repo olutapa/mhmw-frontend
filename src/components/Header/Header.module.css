@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-.logo_link:hover {
+a.logo_link:hover {
     filter: brightness(0.8);
 }
 
