@@ -1,0 +1,28 @@
+.option {
+    padding: .5rem 1rem;
+    border: 1px solid #4a4a58;
+    border-radius: 6px;
+    background-color: #272627;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.option:not(.selected):hover {
+    background-color: #3e3c3e;
+}
+
+.selected {
+    background-color: #4a4a58;
+}
+
+.selected.unselectable {
+    cursor: default;
+}
+
+.selected:not(.unselectable):hover {
+    background-color: #737387;
+}
+

@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.spinner {
+    font-family: "Runy Tunes";
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

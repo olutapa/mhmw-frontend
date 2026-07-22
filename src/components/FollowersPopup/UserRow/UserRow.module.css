@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .25rem;
+}
+
+.displayName, .username {
+    color: var(--fg);
+    transition: .2s;
+    text-decoration: none;
+}
+
+.displayName:hover, .username:hover {
+    filter: brightness(0.8);
+}
+
+.displayName {
+    font-weight: 600;
+}
+
+.username {
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.right button {
+    color: var(--bg) !important;
+    text-decoration: none;
+    padding: .4rem .5rem;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: var(--fg);
+    transition: .2s;
+    font-size: 1rem !important;
+}
+
+.right button:hover {
+    filter: brightness(0.8);
+}

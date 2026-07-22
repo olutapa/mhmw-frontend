@@ -1,0 +1,36 @@
+.card {
+    background-color: #3e3c3e;
+    width: 300px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4a4a58;
+    transition: .2s;
+}
+
+.card:hover {
+    background-color: #4a4a58;
+    border-color: #3e3c3e;
+}
+
+.card__title_row {
+    font-weight: 700;
+}
+
+.card__subtitle_row {
+    margin-top: .25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+    font-size: .9rem;
+    opacity: .7;
+}
+
+.card__release:not(:last-child)::after {
+    content: " •";
+}

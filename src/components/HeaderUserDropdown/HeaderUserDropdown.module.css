@@ -1,0 +1,93 @@
+.userDropdownWrapper {
+    position: relative;
+}
+
+.userDropdown {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: inherit;
+    font-family: inherit;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .2rem;
+    padding: .5rem .7rem;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.userDropdown:hover {
+    background-color: #272727;
+}
+
+.icon, .icon svg {
+    width: 1em;
+    height: 1em;
+    transition: .2s;
+}
+
+.dropdownArrow {
+    fill: currentColor;
+    d: var(--dropdown-arrow-icon);
+}
+
+
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    background-color: #272727;
+    border-radius: 6px;
+    padding: .2rem;
+    margin-top: .2rem;
+    width: max-content;
+    max-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+    min-width: 200px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border: 1px solid #4a4a58;
+    z-index: 10;
+}
+
+.menu.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuItem {
+    padding: .5rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem !important;
+    transition: .2s;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+.menuItem:hover {
+    background-color: #353535;
+    color: inherit !important;
+    filter: none !important;
+}
+
+button.menuItem:hover {
+    background-color: var(--red);
+}

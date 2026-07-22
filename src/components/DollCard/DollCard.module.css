@@ -1,0 +1,143 @@
+.card {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    padding: 4px;
+    border: 1px solid #4a4a58;
+    border-radius: 8px;
+    background-color: #3e3c3e;
+    max-width: 300px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* height: 200px; */
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card__title_row {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+.card__main_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    gap: .1rem;
+    font-size: 1rem;
+}
+
+.card__additional_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5rem;
+    margin-top: 1rem;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card__buttons button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.card__owned_btn {
+    border: 1px solid #479d2c !important;
+    background-color: #357821;
+}
+
+.card__learn_more {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: var(--blue);
+}
+
+.card__learn_more:hover {
+    filter: brightness(0.8);
+}
+
+.card__learn_more a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card__wishlist_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.5rem;
+    border: 1px solid #424242;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: #272727;
+    transition: .2s;
+}
+
+.card__wishlist_btn:has(.owned_icon) {
+    cursor: default;
+}
+
+.card__wishlist_btn:has(.hollow_heart):hover {
+    filter: brightness(0.6);
+}
+
+.card__wishlist_btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.heart {
+    fill: var(--red);
+    d: var(--filled-heart-icon);
+}
+
+.card__wishlist_btn:has(.heart):hover {
+    background-color: var(--red);
+}
+
+.card__wishlist_btn:hover .heart {
+    fill: #272727;
+    d: var(--shattered-heart-icon);
+}
+
+.hollow_heart {
+    fill: var(--red);
+    d: var(--hollow-heart-icon);
+}
+
+.owned_icon {
+    fill: #5dc128;
+    d: var(--inventory-icon);
+}
